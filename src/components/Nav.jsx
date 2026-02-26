@@ -1,42 +1,32 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Nav.module.css";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={styles.navbar}>
+    <header className={styles.navbar}>
       <div className={styles.container}>
+        {/* LEFT SIDE */}
         <div className={styles.logo}>
-          <Link to="/">Mani Das Industries</Link>
+          <NavLink to="/">Mani Das Industries</NavLink>
         </div>
 
-        <div className={`${styles.links} ${menuOpen ? styles.active : ""}`}>
-          <Link to="/" onClick={() => setMenuOpen(false)}>
-            Home
-          </Link>
-          <Link to="/about" onClick={() => setMenuOpen(false)}>
-            About
-          </Link>
-          <Link to="/product" onClick={() => setMenuOpen(false)}>
-            Products
-          </Link>
-          <Link to="/infrastructure" onClick={() => setMenuOpen(false)}>
-            Infrastructure
-          </Link>
-          <Link to="/financial" onClick={() => setMenuOpen(false)}>
-            Financial
-          </Link>
-          <Link
-            to="/contact-us"
-            className={styles.cta}
-            onClick={() => setMenuOpen(false)}
-          >
+        {/* RIGHT SIDE */}
+        <nav className={`${styles.navLinks} ${menuOpen ? styles.show : ""}`}>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/product">Products</NavLink>
+          <NavLink to="/infrastructure">Infrastructure</NavLink>
+          <NavLink to="/financial">Financial</NavLink>
+
+          <NavLink to="/contact-us" className={styles.cta}>
             Contact Us
-          </Link>
-        </div>
+          </NavLink>
+        </nav>
 
+        {/* HAMBURGER */}
         <div
           className={styles.hamburger}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -44,7 +34,7 @@ const Nav = () => {
           ☰
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
