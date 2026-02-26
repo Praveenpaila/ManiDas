@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Infrastructure.module.css";
+import styles from "./InfraStructure.module.css";
 
 const Infrastructure = () => {
   return (
