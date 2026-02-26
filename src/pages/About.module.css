@@ -15,8 +15,8 @@
 /* ============================= */
 
 .hero {
-  margin-top: 100px;
-  padding: 180px 10%;
+  /* margin-top: 100px; */
+  padding: 300px 10%;
   background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
   color: white;
   text-align: center;
