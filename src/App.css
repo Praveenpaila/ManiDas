@@ -1,0 +1,7 @@
+/* reset margins on main and footer so pages are consistent */
+main {
+  margin: 0;
+}
+.footer {
+  margin: 0;
+}

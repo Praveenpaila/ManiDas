@@ -1,0 +1,223 @@
+/* ========================= */
+/* PAGE BASE */
+/* ========================= */
+
+.productsPage {
+  background: #f4f7fa;
+  font-family: "Segoe UI", sans-serif;
+  /* reset spacing so global rules control margins */
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================= */
+/* HEADER (hero) */
+/* unified size with other pages */
+/* ========================= */
+
+.header {
+  text-align: center;
+  margin-top: 100px;
+  padding: 200px 10%;
+  background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  color: white;
+}
+
+.header h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.header p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* ========================= */
+/* PRODUCT GRID */
+/* ========================= */
+
+.productSection {
+  padding: 100px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  background: white;
+}
+
+/* CARD DESIGN */
+
+.card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  transition: 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(31, 111, 139, 0.2);
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #0f1f2f;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin-top: auto;
+}
+
+.card ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* ========================= */
+/* WHY SECTION */
+/* ========================= */
+
+.whySection {
+  padding: 100px 10%;
+  text-align: center;
+  background: #f5f7fa;
+}
+
+.whySection h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0f1f2f;
+}
+
+.whySection p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ========================= */
+/* CTA SECTION */
+/* ========================= */
+
+.ctaSection {
+  padding: 100px 10%;
+  text-align: center;
+  background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  color: white;
+}
+
+.ctaSection h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.ctaSection button {
+  padding: 14px 32px;
+  background: white;
+  color: #0f1f2f;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ctaSection button:hover {
+  background: #d4d4d4;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .header {
+    padding: 120px 8%;
+  }
+
+  .productSection {
+    padding: 80px 8%;
+  }
+
+  .whySection,
+  .ctaSection {
+    padding: 80px 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .productsPage {
+    padding-top: 100px;
+  }
+
+  .header {
+    padding: 80px 6%;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .productSection {
+    padding: 60px 6%;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .whySection {
+    padding: 60px 6%;
+  }
+
+  .whySection h2 {
+    font-size: 24px;
+  }
+
+  .ctaSection {
+    padding: 70px 6%;
+  }
+
+  .ctaSection h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p,
+  .card ul li {
+    font-size: 13px;
+  }
+
+  .ctaSection button {
+    width: 100%;
+  }
+}

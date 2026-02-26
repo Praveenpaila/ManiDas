@@ -1,0 +1,177 @@
+/* ============================= */
+/* GLOBAL PAGE STYLE */
+/* ============================= */
+
+.aboutPage {
+  background: #f4f7fa;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* unified hero: same padding as other pages */
+/* ============================= */
+
+.hero {
+  margin-top: 100px;
+  padding: 180px 10%;
+  background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* ============================= */
+/* CONTENT SECTION */
+/* ============================= */
+
+.content {
+  padding: 100px 12%;
+  background: white;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  color: #0f1f2f;
+  position: relative;
+}
+
+.content h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #1f6f8b;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #555;
+  max-width: 900px;
+}
+
+/* ============================= */
+/* VIDEO SECTION */
+/* ============================= */
+.videoSection {
+  padding: 120px 10%;
+  background: #ffffff;
+}
+
+.videoSection h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 80px;
+  color: #0f1f2f;
+}
+
+/* Full Width Blocks */
+
+.videoBlock {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.videoBlock video {
+  width: 55%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.videoText {
+  width: 45%;
+}
+
+.videoText h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #0f1f2f;
+}
+
+.videoText p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Reverse Layout */
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 120px 8%;
+  }
+
+  .videoBlock {
+    flex-direction: column;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .videoBlock video {
+    width: 100%;
+    height: 250px;
+  }
+
+  .videoText {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 80px 6%;
+  }
+
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .videoCard video {
+    height: 220px;
+  }
+}

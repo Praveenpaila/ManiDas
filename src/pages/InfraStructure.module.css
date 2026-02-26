@@ -1,0 +1,227 @@
+/* ========================= */
+/* PAGE BASE */
+/* ========================= */
+
+.infrastructurePage {
+  background: #f4f7fa;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0; /* let header/sections add their own spacing */
+}
+
+/* ========================= */
+/* HEADER (hero) */
+/* unified padding with other pages */
+/* ========================= */
+
+.header {
+  text-align: center;
+  margin-top: 100px;
+  padding: 180px 10%;
+  background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  color: white;
+}
+
+.header h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* ========================= */
+/* GENERAL SECTION */
+/* ========================= */
+
+.section {
+  padding: 100px 10%;
+  background: white;
+}
+
+.section:nth-child(even) {
+  background: #f5f7fa;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #0f1f2f;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #1f6f8b;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #555;
+  max-width: 900px;
+}
+
+.section ul {
+  margin-top: 25px;
+  padding-left: 20px;
+}
+
+.section ul li {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* ========================= */
+/* MACHINERY GRID */
+/* ========================= */
+
+.grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(31, 111, 139, 0.2);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #0f1f2f;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ========================= */
+/* CTA SECTION */
+/* ========================= */
+
+.ctaSection {
+  padding: 100px 10%;
+  text-align: center;
+  background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  color: white;
+}
+
+.ctaSection h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.ctaSection button {
+  padding: 14px 32px;
+  background: white;
+  color: #0f1f2f;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ctaSection button:hover {
+  background: #d4d4d4;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .header {
+    padding: 120px 8%;
+  }
+
+  .section {
+    padding: 80px 8%;
+  }
+
+  .ctaSection {
+    padding: 80px 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .infrastructurePage {
+    padding-top: 100px;
+  }
+
+  .header {
+    padding: 80px 6%;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 60px 6%;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .section p,
+  .section ul li {
+    font-size: 14px;
+  }
+
+  .ctaSection {
+    padding: 70px 6%;
+  }
+
+  .ctaSection h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 25px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .ctaSection button {
+    width: 100%;
+  }
+}
