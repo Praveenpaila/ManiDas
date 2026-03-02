@@ -21,15 +21,18 @@
 
 /* LOGO (FULL LEFT) */
 .logo {
-  flex: 0; /* Don't stretch */
+  /* flex: 0; Don't stretch */
+  height: 100px;
+  width: 100px;
+  /* background-color: red; */
+  /* border: 2px solid black; */
+  /* position: relative;
+  left: 100px; */
 }
-
-.logo a {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-  text-decoration: none;
-  letter-spacing: 0.5px;
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* RIGHT SIDE LINKS */

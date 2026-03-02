@@ -1,25 +1,21 @@
-/* ========================= */
-/* PAGE BASE */
-/* ========================= */
+/* ============================= */
+/* GLOBAL PAGE STYLE */
+/* ============================= */
 
 .financialPage {
   background: #f4f7fa;
   font-family: "Segoe UI", sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
-/* ========================= */
-/* HEADER (hero) */
-/* consistent height used by all pages */
-/* ========================= */
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
 
 .header {
-  text-align: center;
-  /* margin-top: 100px; */
-  padding: 300px 10%;
+  padding: 160px 10%;
   background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
   color: white;
+  text-align: center;
 }
 
 .header h1 {
@@ -31,26 +27,26 @@
 .header p {
   max-width: 750px;
   margin: auto;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
   opacity: 0.9;
 }
 
-/* ========================= */
-/* GENERAL SECTION */
-/* ========================= */
+/* ============================= */
+/* GENERIC SECTION */
+/* ============================= */
 
 .section {
   padding: 100px 10%;
   background: white;
 }
 
-.section:nth-child(even) {
-  background: #f5f7fa;
+.section:nth-of-type(even) {
+  background: #f0f4f8;
 }
 
 .section h2 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 25px;
   color: #0f1f2f;
   position: relative;
@@ -58,43 +54,43 @@
 
 .section h2::after {
   content: "";
-  width: 80px;
+  width: 60px;
   height: 3px;
   background: #1f6f8b;
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -8px;
 }
 
 .section p {
   font-size: 16px;
   line-height: 1.9;
   color: #555;
-  max-width: 900px;
+  max-width: 850px;
 }
 
-/* ========================= */
-/* GRID */
-/* ========================= */
+/* ============================= */
+/* GRID & CARDS */
+/* ============================= */
 
 .grid {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
 }
 
 .card {
-  background: #ffffff;
-  padding: 35px;
-  border-radius: 10px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
-  transition: 0.4s ease;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 25px 60px rgba(31, 111, 139, 0.15);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -109,34 +105,34 @@
   color: #555;
 }
 
-/* ========================= */
-/* LIST */
-/* ========================= */
+/* ============================= */
+/* LIST STYLE */
+/* ============================= */
 
 .section ul {
-  margin-top: 25px;
+  margin-top: 20px;
   padding-left: 20px;
 }
 
 .section ul li {
   font-size: 15px;
-  margin-bottom: 12px;
-  color: #333;
+  margin-bottom: 10px;
+  color: #555;
 }
 
-/* ========================= */
+/* ============================= */
 /* CTA SECTION */
-/* ========================= */
+/* ============================= */
 
 .ctaSection {
-  padding: 110px 10%;
-  text-align: center;
+  padding: 120px 10%;
   background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  text-align: center;
   color: white;
 }
 
 .ctaSection h2 {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 30px;
 }
 
@@ -146,7 +142,7 @@
   color: #0f1f2f;
   border: none;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 4px;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -155,74 +151,41 @@
   background: #d4d4d4;
 }
 
-/* ========================= */
+/* ============================= */
 /* RESPONSIVE */
-/* ========================= */
+/* ============================= */
 
 @media (max-width: 992px) {
   .header {
-    padding: 120px 8%;
+    padding: 140px 8%;
   }
 
-  .section {
-    padding: 80px 8%;
-  }
-
+  .section,
   .ctaSection {
     padding: 90px 8%;
   }
 }
 
 @media (max-width: 768px) {
-  .financialPage {
-    padding-top: 100px;
-  }
-
   .header {
-    padding: 80px 6%;
+    padding: 110px 6%;
   }
 
   .header h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .header p {
     font-size: 14px;
   }
 
-  .section {
-    padding: 60px 6%;
-  }
-
-  .section h2 {
-    font-size: 22px;
-  }
-
-  .section p,
-  .section ul li {
-    font-size: 14px;
-  }
-
+  .section,
   .ctaSection {
     padding: 70px 6%;
   }
 
   .ctaSection h2 {
     font-size: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    padding: 25px;
-  }
-
-  .card h3 {
-    font-size: 18px;
-  }
-
-  .card p {
-    font-size: 13px;
   }
 
   .ctaSection button {

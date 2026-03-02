@@ -1,143 +1,143 @@
-/* ========================= */
-/* PAGE BASE */
-/* ========================= */
-
 .productsPage {
   background: #f4f7fa;
   font-family: "Segoe UI", sans-serif;
-  /* reset spacing so global rules control margins */
-  margin: 0;
-  padding: 0;
 }
 
-/* ========================= */
-/* HEADER (hero) */
-/* unified size with other pages */
-/* ========================= */
-
+/* HERO */
 .header {
-  text-align: center;
-  /* margin-top: 100px; */
-  padding: 340px;
+  padding: 160px 10%;
   background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
   color: white;
+  text-align: center;
 }
 
 .header h1 {
   font-size: 44px;
   margin-bottom: 20px;
-  font-weight: 700;
 }
 
 .header p {
   max-width: 750px;
   margin: auto;
-  font-size: 16px;
   line-height: 1.8;
   opacity: 0.9;
 }
 
-/* ========================= */
 /* PRODUCT GRID */
-/* ========================= */
-
 .productSection {
-  padding: 100px 10%;
+  padding: 110px 10%;
+  background: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
-  background: white;
 }
 
-/* CARD DESIGN */
-
 .card {
-  background: #ffffff;
-  padding: 35px;
-  border-radius: 10px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
-  transition: 0.4s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background: white;
+  padding: 45px 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid #1f6f8b;
+  transition: 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 60px rgba(31, 111, 139, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
 }
 
 .card h2 {
-  font-size: 22px;
   margin-bottom: 15px;
-  color: #0f1f2f;
 }
 
 .card p {
-  font-size: 14px;
+  margin-bottom: 20px;
   line-height: 1.8;
   color: #555;
-  margin-bottom: 15px;
 }
 
 .card ul {
   padding-left: 18px;
-  margin-top: auto;
 }
 
 .card ul li {
-  font-size: 14px;
   margin-bottom: 8px;
-  color: #333;
+  font-size: 14px;
 }
 
-/* ========================= */
-/* WHY SECTION */
-/* ========================= */
+/* TECHNOLOGY */
+.techSection {
+  padding: 110px 10%;
+  background: #f0f4f8;
+}
 
-.whySection {
-  padding: 100px 10%;
+.techSection h2 {
   text-align: center;
-  background: #f5f7fa;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.techSection p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+  line-height: 1.8;
+  color: #555;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.techGrid h3 {
+  margin-bottom: 15px;
+}
+
+.techGrid ul {
+  padding-left: 18px;
+}
+
+/* WHY */
+.whySection {
+  padding: 110px 10%;
+  background: white;
+  text-align: center;
 }
 
 .whySection h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #0f1f2f;
+  margin-bottom: 25px;
+  font-size: 30px;
 }
 
 .whySection p {
   max-width: 750px;
   margin: auto;
-  font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.9;
   color: #555;
 }
 
-/* ========================= */
-/* CTA SECTION */
-/* ========================= */
-
+/* CTA */
 .ctaSection {
-  padding: 100px 10%;
-  text-align: center;
+  padding: 120px 10%;
   background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  text-align: center;
   color: white;
 }
 
 .ctaSection h2 {
-  font-size: 30px;
   margin-bottom: 30px;
+  font-size: 32px;
 }
 
 .ctaSection button {
-  padding: 14px 32px;
+  padding: 14px 34px;
   background: white;
   color: #0f1f2f;
   border: none;
-  font-weight: 600;
   border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -146,75 +146,17 @@
   background: #d4d4d4;
 }
 
-/* ========================= */
 /* RESPONSIVE */
-/* ========================= */
-
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .header {
-    padding: 120px 8%;
+    padding: 110px 6%;
   }
 
-  .productSection {
-    padding: 80px 8%;
-  }
-
+  .productSection,
+  .techSection,
   .whySection,
   .ctaSection {
-    padding: 80px 8%;
-  }
-}
-
-@media (max-width: 768px) {
-  .productsPage {
-    padding-top: 100px;
-  }
-
-  .header {
-    padding: 80px 6%;
-  }
-
-  .header h1 {
-    font-size: 32px;
-  }
-
-  .header p {
-    font-size: 14px;
-  }
-
-  .productSection {
-    padding: 60px 6%;
-  }
-
-  .card {
-    padding: 25px;
-  }
-
-  .whySection {
-    padding: 60px 6%;
-  }
-
-  .whySection h2 {
-    font-size: 24px;
-  }
-
-  .ctaSection {
     padding: 70px 6%;
-  }
-
-  .ctaSection h2 {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .card h2 {
-    font-size: 18px;
-  }
-
-  .card p,
-  .card ul li {
-    font-size: 13px;
   }
 
   .ctaSection button {

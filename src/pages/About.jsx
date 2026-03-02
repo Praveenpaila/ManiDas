@@ -5,36 +5,65 @@ import products from "../assets/assets";
 const About = () => {
   return (
     <div className={styles.aboutPage}>
+      {/* HERO */}
       <section className={styles.hero}>
         <h1>About Mani Das Industries</h1>
         <p>
-          A leading manufacturer of Multi-Layer Poly Films and Flexible
-          Packaging Solutions based in Auto Nagar, Visakhapatnam.
+          Established in 2015, Mani Das Industries is a leading manufacturer of
+          Multi-Layer Poly Films and Flexible Packaging Solutions based in Auto
+          Nagar, Visakhapatnam.
         </p>
       </section>
 
-      <section className={styles.content}>
+      {/* COMPANY OVERVIEW */}
+      <section className={styles.section}>
         <h2>Company Overview</h2>
         <p>
-          Mani Das Industries is a partnership firm engaged in manufacturing
-          mulch film, lamination film, stretch film, and packaging films serving
-          dairy, beverage, and food industries across Andhra Pradesh.
+          Mani Das Industries is a partnership firm engaged in the manufacturing
+          of multi-layer poly films, mulch films, lamination films, and stretch
+          films serving dairy, beverage, and food industries across Andhra
+          Pradesh.
         </p>
+      </section>
 
+      {/* VISION & MISSION */}
+      <section className={`${styles.section} ${styles.alt}`}>
         <h2>Our Vision</h2>
         <p>
           To deliver high-quality flexible packaging solutions using advanced
-          manufacturing processes and reliable raw materials.
-        </p>
-
-        <h2>Infrastructure</h2>
-        <p>
-          Equipped with multi-layer extrusion machinery, two-color printing
-          machines, and strong power infrastructure to ensure consistent
-          production capacity.
+          manufacturing processes, reliable raw materials, and continuous
+          operational excellence.
         </p>
       </section>
 
+      {/* LEADERSHIP */}
+      <section className={styles.section}>
+        <h2>Leadership & Management</h2>
+
+        <div className={styles.teamGrid}>
+          <div className={styles.teamCard}>
+            <h3>Founder</h3>
+            <p>PI Prakash Kumar</p>
+          </div>
+
+          <div className={styles.teamCard}>
+            <h3>General Manager</h3>
+            <p>P Kranthi Prakash</p>
+          </div>
+
+          <div className={styles.teamCard}>
+            <h3>Finance Manager</h3>
+            <p>D Chittibabu</p>
+          </div>
+
+          <div className={styles.teamCard}>
+            <h3>Production Incharge</h3>
+            <p>B Krishna</p>
+          </div>
+        </div>
+      </section>
+
+      {/* VIDEO SECTION */}
       <section className={styles.videoSection}>
         <h2>Our Manufacturing Facility</h2>
 
@@ -44,7 +73,7 @@ const About = () => {
             <h3>Plant Overview</h3>
             <p>
               A complete view of our manufacturing unit located in Auto Nagar,
-              Visakhapatnam.
+              Visakhapatnam operating with 100 MT monthly capacity.
             </p>
           </div>
         </div>
@@ -54,8 +83,8 @@ const About = () => {
           <div className={styles.videoText}>
             <h3>Production Process</h3>
             <p>
-              Multi-layer extrusion and printing process ensuring quality and
-              consistency.
+              Multi-layer extrusion and printing process ensuring consistent
+              thickness, sealing strength, and durability.
             </p>
           </div>
         </div>
@@ -65,7 +94,8 @@ const About = () => {
           <div className={styles.videoText}>
             <h3>Machinery & Equipment</h3>
             <p>
-              Advanced machines supporting high-capacity poly film production.
+              Advanced multi-layer extrusion machinery and two-color printing
+              systems supporting high-quality film production.
             </p>
           </div>
         </div>

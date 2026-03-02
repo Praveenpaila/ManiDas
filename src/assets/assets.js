@@ -9,6 +9,7 @@ import hero7 from "./hero7.png";
 import one from "./one.mp4";
 import two from "./two.mp4";
 import three from "./three.mp4";
+import logo from "./logo.png";
 const products = {
   hero,
   hero1,
@@ -21,5 +22,6 @@ const products = {
   one,
   two,
   three,
+  logo,
 };
 export default products;
