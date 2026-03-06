@@ -11,7 +11,6 @@ import two from "./two.mp4";
 import three from "./three.mp4";
 import logo from "./logo.png";
 import badam from "./badam.png";
-import betterFish from "./betterFish.png";
 import chick from "./chick.png";
 import chicken from "./chicken.png";
 
@@ -27,12 +26,10 @@ import head from "./head.png";
 
 const images = {
   badam,
-  betterFish,
   chick,
   chicken,
   cowMilk,
   CrunchyBread,
-
   deliciousChickenLiver,
   deliciousChickenNuggets,
   dove,
