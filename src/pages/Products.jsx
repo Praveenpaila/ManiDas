@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Products.module.css";
 import { useNavigate } from "react-router-dom";
+import assets from "../assets/assets";
+import ProductCard from "../components/ProductCard";
 
 const Products = () => {
   const navigate = useNavigate();
@@ -18,56 +20,12 @@ const Products = () => {
 
       {/* PRODUCT GRID */}
       <section className={styles.productSection}>
-        <div className={styles.card}>
-          <h2>Mulch Film</h2>
-          <p>
-            Agricultural film designed for soil moisture retention, temperature
-            regulation, and crop protection.
-          </p>
-          <ul>
-            <li>High durability</li>
-            <li>UV resistant</li>
-            <li>Custom thickness options</li>
-          </ul>
-        </div>
+        <h2 className={styles.productHeading}>Our Product Gallery</h2>
 
-        <div className={styles.card}>
-          <h2>Lamination Film</h2>
-          <p>
-            Flexible packaging film suitable for dairy, liquid, and powder
-            applications.
-          </p>
-          <ul>
-            <li>Strong sealing strength</li>
-            <li>Moisture resistant</li>
-            <li>Excellent print compatibility</li>
-          </ul>
-        </div>
-
-        <div className={styles.card}>
-          <h2>Milk Packaging Film</h2>
-          <p>
-            Food-grade film with high barrier properties ensuring leak
-            resistance and hygiene.
-          </p>
-          <ul>
-            <li>Food-safe quality</li>
-            <li>High tensile strength</li>
-            <li>Custom branding available</li>
-          </ul>
-        </div>
-
-        <div className={styles.card}>
-          <h2>Stretch Film</h2>
-          <p>
-            High elasticity wrapping film ensuring secure transportation and
-            load stability.
-          </p>
-          <ul>
-            <li>Industrial-grade durability</li>
-            <li>Strong load stability</li>
-            <li>High flexibility</li>
-          </ul>
+        <div className={styles.productGrid}>
+          {Object.values(assets.images).map((img, index) => (
+            <ProductCard key={index} img={img} />
+          ))}
         </div>
       </section>
 
@@ -82,7 +40,7 @@ const Products = () => {
         </p>
 
         <div className={styles.techGrid}>
-          <div>
+          <div className={styles.card}>
             <h3>Layer Structure (ABC)</h3>
             <p>
               Optimized skin layers ensure sealing and printability, while the
@@ -90,7 +48,7 @@ const Products = () => {
             </p>
           </div>
 
-          <div>
+          <div className={styles.card}>
             <h3>Key Advantages</h3>
             <ul>
               <li>Superior tear & puncture resistance</li>
@@ -100,7 +58,7 @@ const Products = () => {
             </ul>
           </div>
 
-          <div>
+          <div className={styles.card}>
             <h3>Applications</h3>
             <ul>
               <li>Agricultural films (mulch, greenhouse)</li>

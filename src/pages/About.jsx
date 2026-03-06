@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import products from "../assets/assets";
+import assets from "../assets/assets";
 
 const About = () => {
   return (
@@ -42,6 +42,10 @@ const About = () => {
 
         <div className={styles.teamGrid}>
           <div className={styles.teamCard}>
+            <h3>Production Head</h3>
+            <p>G Ramu</p>
+          </div>
+          <div className={styles.teamCard}>
             <h3>Founder</h3>
             <p>PI Prakash Kumar</p>
           </div>
@@ -68,7 +72,7 @@ const About = () => {
         <h2>Our Manufacturing Facility</h2>
 
         <div className={styles.videoBlock}>
-          <video controls src={products.one} />
+          <video controls src={assets.products.one} />
           <div className={styles.videoText}>
             <h3>Plant Overview</h3>
             <p>
@@ -79,7 +83,7 @@ const About = () => {
         </div>
 
         <div className={`${styles.videoBlock} ${styles.reverse}`}>
-          <video controls src={products.two} />
+          <video controls src={assets.products.two} />
           <div className={styles.videoText}>
             <h3>Production Process</h3>
             <p>
@@ -90,7 +94,7 @@ const About = () => {
         </div>
 
         <div className={styles.videoBlock}>
-          <video controls src={products.three} />
+          <video controls src={assets.products.three} />
           <div className={styles.videoText}>
             <h3>Machinery & Equipment</h3>
             <p>

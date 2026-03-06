@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Nav.module.css";
-import products from "../assets/assets";
+import assets from "../assets/assets";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,7 +32,7 @@ const Nav = () => {
         {/* LEFT SIDE */}
         <div className={styles.logo}>
           <Link to="/">
-            <img src={products.logo} alt="" />
+            <img src={assets.products.logo} alt="" />
           </Link>
         </div>
 

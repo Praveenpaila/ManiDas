@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import products from "../assets/assets";
+import assets from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       {/* HERO */}
       <section className={styles.hero}>
         <img
-          src={products.hero7}
+          src={assets.products.hero7}
           alt="Poly Film Manufacturing Plant"
           className={styles.heroImage}
         />

@@ -10,6 +10,37 @@ import one from "./one.mp4";
 import two from "./two.mp4";
 import three from "./three.mp4";
 import logo from "./logo.png";
+import badam from "./badam.png";
+import betterFish from "./betterFish.png";
+import chick from "./chick.png";
+import chicken from "./chicken.png";
+
+import cowMilk from "./cowMilk.png";
+import CrunchyBread from "./CrunchyBreaded.png";
+import deliciousChickenLiver from "./deliciousChickenLiver.png";
+import deliciousChickenNuggets from "./deliciousChickenNuggets.png";
+import dove from "./dove.png";
+import FishFillets from "./FishFillets.png";
+import frozenMixedVegetables from "./frozenMixedVegetables.png";
+import garamMasala from "./garamMasala.png";
+import head from "./head.png";
+
+const images = {
+  badam,
+  betterFish,
+  chick,
+  chicken,
+  cowMilk,
+  CrunchyBread,
+
+  deliciousChickenLiver,
+  deliciousChickenNuggets,
+  dove,
+  FishFillets,
+  frozenMixedVegetables,
+  garamMasala,
+  head,
+};
 const products = {
   hero,
   hero1,
@@ -24,4 +55,4 @@ const products = {
   three,
   logo,
 };
-export default products;
+export default { products, images };
