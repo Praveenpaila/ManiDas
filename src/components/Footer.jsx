@@ -43,7 +43,7 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <p>Plot No. 23, F-Block, Auto Nagar</p>
           <p>Visakhapatnam – 530012</p>
-          <p>Phone: +91 99498 88242</p>
+          <p>Phone: +91 9619923899</p>
           <p>Email: manidaspolyfilms@gmail.com</p>
         </div>
       </div>

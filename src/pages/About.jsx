@@ -72,18 +72,7 @@ const About = () => {
       <section className={styles.videoSection}>
         <h2>Our Manufacturing Facility</h2>
 
-        <div className={styles.videoBlock}>
-          <video controls src={videos?.one} />
-          <div className={styles.videoText}>
-            <h3>Plant Overview</h3>
-            <p>
-              A complete view of our manufacturing unit located in Auto Nagar,
-              Visakhapatnam operating with 100 MT monthly capacity.
-            </p>
-          </div>
-        </div>
-
-        <div className={`${styles.videoBlock} ${styles.reverse}`}>
+        <div className={`${styles.videoBlock}`}>
           <video controls src={videos?.two} />
           <div className={styles.videoText}>
             <h3>Production Process</h3>
@@ -94,7 +83,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className={styles.videoBlock}>
+        <div className={`${styles.videoBlock} ${styles.reverse}`}>
           <video controls src={videos?.three} />
           <div className={styles.videoText}>
             <h3>Machinery & Equipment</h3>
