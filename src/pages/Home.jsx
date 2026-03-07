@@ -49,7 +49,7 @@ const Home = () => {
         </div>
 
         <div className={styles.statBox}>
-          <h3>200 HP</h3>
+          <h3>110 HP</h3>
           <p>Connected Power Load</p>
         </div>
 

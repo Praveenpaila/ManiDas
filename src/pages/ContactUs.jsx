@@ -23,7 +23,7 @@ const Contact = () => {
           <p>Andhra Pradesh, India</p>
 
           <h3>Phone</h3>
-          <p>+91 99498 88242</p>
+          <p>+91 9619923899</p>
 
           <h3>Email</h3>
           <p>manidaspolyfilms@gmail.com</p>

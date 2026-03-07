@@ -48,7 +48,7 @@ const Financial = () => {
         <ul>
           <li>100 MT Monthly Production Capacity</li>
           <li>120 KG/Hour Production Output</li>
-          <li>200 HP Connected Power Load</li>
+          <li>110 HP Connected Power Load</li>
           <li>Growing Market Demand Across 6+ Districts</li>
         </ul>
       </section>

@@ -3,7 +3,7 @@
 /* ========================= */
 
 .footer {
-  background: #0f1f2f;
+  background: linear-gradient(135deg, #0f1f2f, #142a3d);
   color: #ffffff;
   padding-top: 80px;
   font-family: "Segoe UI", sans-serif;
@@ -30,6 +30,7 @@
   font-size: 22px;
   margin-bottom: 18px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .section h4 {
@@ -37,13 +38,14 @@
   margin-bottom: 18px;
   font-weight: 600;
   position: relative;
+  color: #ffffff;
 }
 
 .section h4::after {
   content: "";
   width: 40px;
   height: 2px;
-  background: #1f6f8b;
+  background: #2a9dbb;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -72,14 +74,14 @@
 
 .section ul li a {
   text-decoration: none;
-  color: #d4d4d4;
+  color: #cfd8df;
   font-size: 14px;
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .section ul li a:hover {
   color: #ffffff;
-  padding-left: 5px;
+  padding-left: 6px;
 }
 
 /* ========================= */
@@ -91,8 +93,9 @@
   padding: 25px 10%;
   text-align: center;
   font-size: 13px;
-  color: #aaaaaa;
+  color: #b8c2cc;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 /* ========================= */

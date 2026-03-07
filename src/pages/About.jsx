@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./About.module.css";
-import assets from "../assets/assets";
-
+import { useSelector } from "react-redux";
 const About = () => {
+  const videos = useSelector((state) => state.videos.videos) || {};
+  console.log(videos);
   return (
     <div className={styles.aboutPage}>
       {/* HERO */}
@@ -72,7 +73,7 @@ const About = () => {
         <h2>Our Manufacturing Facility</h2>
 
         <div className={styles.videoBlock}>
-          <video controls src={assets.products.one} />
+          <video controls src={videos?.one} />
           <div className={styles.videoText}>
             <h3>Plant Overview</h3>
             <p>
@@ -83,7 +84,7 @@ const About = () => {
         </div>
 
         <div className={`${styles.videoBlock} ${styles.reverse}`}>
-          <video controls src={assets.products.two} />
+          <video controls src={videos?.two} />
           <div className={styles.videoText}>
             <h3>Production Process</h3>
             <p>
@@ -94,7 +95,7 @@ const About = () => {
         </div>
 
         <div className={styles.videoBlock}>
-          <video controls src={assets.products.three} />
+          <video controls src={videos?.three} />
           <div className={styles.videoText}>
             <h3>Machinery & Equipment</h3>
             <p>

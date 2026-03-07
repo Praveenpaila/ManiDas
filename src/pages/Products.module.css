@@ -1,12 +1,12 @@
 .productsPage {
-  background: #f4f7fa;
+  background: linear-gradient(#f6f9fc, #eef4f8);
   font-family: "Segoe UI", sans-serif;
 }
 
 /* HERO */
 .header {
   padding: 160px 10%;
-  background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  background: linear-gradient(135deg, #0f1f2f, #2a7da0);
   color: white;
   text-align: center;
 }
@@ -14,13 +14,14 @@
 .header h1 {
   font-size: 44px;
   margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
 .header p {
   max-width: 750px;
   margin: auto;
   line-height: 1.8;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* PRODUCT SECTION */
@@ -33,6 +34,7 @@
   text-align: center;
   font-size: 32px;
   margin-bottom: 50px;
+  color: #0f1f2f;
 }
 
 .productGrid {
@@ -44,13 +46,14 @@
 /* TECHNOLOGY */
 .techSection {
   padding: 110px 10%;
-  background: #f0f4f8;
+  background: linear-gradient(#f6f9fc, #eef4f8);
 }
 
 .techSection h2 {
   text-align: center;
   margin-bottom: 40px;
   font-size: 30px;
+  color: #0f1f2f;
 }
 
 .techSection p {
@@ -67,22 +70,25 @@
   gap: 40px;
 }
 
+/* CARDS */
+
 .card {
   background: white;
   padding: 45px 30px;
   border-radius: 14px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
   border-top: 4px solid #1f6f8b;
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
 }
 
 .card h2 {
   margin-bottom: 15px;
+  color: #1f6f8b;
 }
 
 .card p {
@@ -110,6 +116,7 @@
 .whySection h2 {
   margin-bottom: 25px;
   font-size: 30px;
+  color: #0f1f2f;
 }
 
 .whySection p {
@@ -122,7 +129,7 @@
 /* CTA */
 .ctaSection {
   padding: 120px 10%;
-  background: linear-gradient(135deg, #0f1f2f, #1f6f8b);
+  background: linear-gradient(135deg, #1f6f8b, #2a9dbb);
   text-align: center;
   color: white;
 }
@@ -140,14 +147,17 @@
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .ctaSection button:hover {
-  background: #d4d4d4;
+  transform: translateY(-2px);
+  background: #f2f2f2;
 }
 
 /* RESPONSIVE */
+
 @media (max-width: 768px) {
   .header {
     padding: 110px 6%;

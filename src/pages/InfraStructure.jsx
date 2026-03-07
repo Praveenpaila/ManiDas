@@ -57,7 +57,7 @@ const Infrastructure = () => {
       <section className={styles.section}>
         <h2>Utilities & Power</h2>
         <ul>
-          <li>Connected Load: 200 HP</li>
+          <li>Connected Load: 110 HP</li>
           <li>Reliable Power Supply</li>
           <li>Water Availability: Sufficient</li>
           <li>Well-connected by Road, Rail & Air</li>

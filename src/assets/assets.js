@@ -11,32 +11,18 @@ import two from "./two.mp4";
 import three from "./three.mp4";
 import logo from "./logo.png";
 import badam from "./badam.png";
-import chick from "./chick.png";
-import chicken from "./chicken.png";
-
-import cowMilk from "./cowMilk.png";
-import CrunchyBread from "./CrunchyBreaded.png";
-import deliciousChickenLiver from "./deliciousChickenLiver.png";
-import deliciousChickenNuggets from "./deliciousChickenNuggets.png";
-import dove from "./dove.png";
-import FishFillets from "./FishFillets.png";
-import frozenMixedVegetables from "./frozenMixedVegetables.png";
-import garamMasala from "./garamMasala.png";
-import head from "./head.png";
-
+import milk from "./milk.png";
+import milk2 from "./milk2.png";
+import bm from "./bm.png";
+import cc from "./cc.png";
+import eo from "./eo.png";
 const images = {
   badam,
-  chick,
-  chicken,
-  cowMilk,
-  CrunchyBread,
-  deliciousChickenLiver,
-  deliciousChickenNuggets,
-  dove,
-  FishFillets,
-  frozenMixedVegetables,
-  garamMasala,
-  head,
+  milk,
+  milk2,
+  bm,
+  cc,
+  eo,
 };
 const products = {
   hero,

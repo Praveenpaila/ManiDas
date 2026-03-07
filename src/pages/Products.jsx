@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Products.module.css";
 import { useNavigate } from "react-router-dom";
-import assets from "../assets/assets";
 import ProductCard from "../components/ProductCard";
-
+import { useSelector } from "react-redux";
 const Products = () => {
+  const images = useSelector((state) => state.images.images);
   const navigate = useNavigate();
 
   return (
@@ -23,7 +23,7 @@ const Products = () => {
         <h2 className={styles.productHeading}>Our Product Gallery</h2>
 
         <div className={styles.productGrid}>
-          {Object.values(assets.images).map((img, index) => (
+          {Object.values(images).map((img, index) => (
             <ProductCard key={index} img={img} />
           ))}
         </div>

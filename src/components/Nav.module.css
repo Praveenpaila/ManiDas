@@ -1,17 +1,19 @@
 /* NAVBAR */
+
 .navbar {
   width: 100%;
-  background: #0f1f2f;
+  background: linear-gradient(135deg, #0f1f2f, #142a3d);
   position: fixed;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
 }
 
 /* CONTAINER */
+
 .container {
-  width: 100%; /* FULL WIDTH */
-  padding: 0 30px; /* Only side spacing */
+  width: 100%;
+  padding: 0 30px;
   height: 75px;
 
   display: flex;
@@ -19,23 +21,21 @@
   align-items: center;
 }
 
-/* LOGO (FULL LEFT) */
+/* LOGO */
+
 .logo {
-  /* flex: 0; Don't stretch */
-  height: 100px;
-  width: 100px;
-  /* background-color: red; */
-  /* border: 2px solid black; */
-  /* position: relative;
-  left: 100px; */
+  height: 90px;
+  width: 90px;
 }
-img {
+
+.logo img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
 /* RIGHT SIDE LINKS */
+
 .navLinks {
   display: flex;
   align-items: center;
@@ -44,14 +44,15 @@ img {
 
 .navLinks a {
   text-decoration: none;
-  color: #d4d4d4;
+  color: #cfd8df;
   font-size: 15px;
   font-weight: 500;
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
   position: relative;
 }
 
 /* Hover underline */
+
 .navLinks a::after {
   content: "";
   position: absolute;
@@ -59,8 +60,8 @@ img {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background: #1f6f8b;
-  transition: 0.3s ease;
+  background: #2a9dbb;
+  transition: 0.25s ease;
 }
 
 .navLinks a:hover::after {
@@ -72,19 +73,23 @@ img {
 }
 
 /* CTA BUTTON */
+
 .cta {
   padding: 8px 18px;
-  background: #1f6f8b;
+  background: linear-gradient(135deg, #1f6f8b, #2a9dbb);
   color: #fff !important;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: 600;
+  box-shadow: 0 6px 18px rgba(31, 111, 139, 0.4);
 }
 
 .cta:hover {
-  background: #145374;
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #1b5f76, #248fa8);
 }
 
 /* HAMBURGER */
+
 .hamburger {
   display: none;
   font-size: 26px;
@@ -93,6 +98,7 @@ img {
 }
 
 /* RESPONSIVE */
+
 @media (max-width: 900px) {
   .navLinks {
     position: fixed;
@@ -100,7 +106,7 @@ img {
     right: -100%;
     width: 260px;
     height: calc(100vh - 75px);
-    background: #0f1f2f;
+    background: linear-gradient(135deg, #0f1f2f, #142a3d);
     flex-direction: column;
     padding: 40px 20px;
     gap: 25px;
