@@ -21,10 +21,13 @@ const Products = () => {
       {/* PRODUCT GRID */}
       <section className={styles.productSection}>
         <h2 className={styles.productHeading}>Our Product Gallery</h2>
+        <p className={styles.scrollHint}>Scroll right to view more products</p>
 
         <div className={styles.productGrid}>
           {Object.values(images).map((img, index) => (
-            <ProductCard key={index} img={img} />
+            <div className={styles.productItem} key={index}>
+              <ProductCard img={img} />
+            </div>
           ))}
         </div>
       </section>
