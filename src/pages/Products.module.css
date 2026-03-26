@@ -1,230 +1,208 @@
 .productsPage {
-  background: linear-gradient(#f6f9fc, #eef4f8);
-  font-family: "Segoe UI", sans-serif;
+background: linear-gradient(#f6f9fc, #eef4f8);
+font-family: "Segoe UI", sans-serif;
 }
 
 /* HERO */
 .header {
-  padding: 160px 10%;
-  background: linear-gradient(135deg, #0f1f2f, #2a7da0);
-  color: white;
-  text-align: center;
+padding: 160px 10%;
+background: linear-gradient(135deg, #0f1f2f, #2a7da0);
+color: white;
+text-align: center;
 }
 
 .header h1 {
-  font-size: 44px;
-  margin-bottom: 20px;
-  letter-spacing: 0.5px;
+font-size: 44px;
+margin-bottom: 20px;
+letter-spacing: 0.5px;
 }
 
 .header p {
-  max-width: 750px;
-  margin: auto;
-  line-height: 1.8;
-  opacity: 0.95;
+max-width: 750px;
+margin: auto;
+line-height: 1.8;
+opacity: 0.95;
 }
 
 /* PRODUCT SECTION */
 .productSection {
-  padding: 110px 10%;
-  background: white;
+padding: 110px 10%;
+background: white;
 }
 
 .productHeading {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 12px;
-  color: #0f1f2f;
+text-align: center;
+font-size: 32px;
+margin-bottom: 12px;
+color: #0f1f2f;
 }
 
 .scrollHint {
-  text-align: center;
-  margin-bottom: 28px;
-  color: #5a6f7d;
-  font-size: 14px;
-  letter-spacing: 0.2px;
+text-align: center;
+margin-bottom: 28px;
+color: #5a6f7d;
+font-size: 14px;
+letter-spacing: 0.2px;
 }
 
 .productGrid {
-  display: flex;
-  gap: 24px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  padding: 8px 4px 16px;
-  -webkit-overflow-scrolling: touch;
-}
-
-.productGrid::-webkit-scrollbar {
-  height: 8px;
-}
-
-.productGrid::-webkit-scrollbar-thumb {
-  background: #b8c8d4;
-  border-radius: 999px;
-}
-
-.productGrid::-webkit-scrollbar-track {
-  background: #e8eef3;
-  border-radius: 999px;
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* Desktop: 3 images */
+gap: 24px;
 }
 
 .productItem {
-  flex: 0 0 calc((100% - 48px) / 3);
-  min-width: 260px;
-  scroll-snap-align: start;
+width: 100%;
 }
 
 /* TECHNOLOGY */
 .techSection {
-  padding: 110px 10%;
-  background: linear-gradient(#f6f9fc, #eef4f8);
+padding: 110px 10%;
+background: linear-gradient(#f6f9fc, #eef4f8);
 }
 
 .techSection h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 30px;
-  color: #0f1f2f;
+text-align: center;
+margin-bottom: 40px;
+font-size: 30px;
+color: #0f1f2f;
 }
 
 .techSection p {
-  max-width: 800px;
-  margin: 0 auto 50px;
-  text-align: center;
-  line-height: 1.8;
-  color: #555;
+max-width: 800px;
+margin: 0 auto 50px;
+text-align: center;
+line-height: 1.8;
+color: #555;
 }
 
 .techGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 40px;
 }
 
 /* CARDS */
-
 .card {
-  background: white;
-  padding: 45px 30px;
-  border-radius: 14px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
-  border-top: 4px solid #1f6f8b;
-  transition: all 0.25s ease;
+background: white;
+padding: 45px 30px;
+border-radius: 14px;
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+border-top: 4px solid #1f6f8b;
+transition: all 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+transform: translateY(-8px);
+box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
 }
 
 .card h2 {
-  margin-bottom: 15px;
-  color: #1f6f8b;
+margin-bottom: 15px;
+color: #1f6f8b;
 }
 
 .card p {
-  margin-bottom: 20px;
-  line-height: 1.8;
-  color: #555;
+margin-bottom: 20px;
+line-height: 1.8;
+color: #555;
 }
 
 .card ul {
-  padding-left: 18px;
+padding-left: 18px;
 }
 
 .card ul li {
-  margin-bottom: 8px;
-  font-size: 14px;
+margin-bottom: 8px;
+font-size: 14px;
 }
 
 /* WHY */
 .whySection {
-  padding: 110px 10%;
-  background: white;
-  text-align: center;
+padding: 110px 10%;
+background: white;
+text-align: center;
 }
 
 .whySection h2 {
-  margin-bottom: 25px;
-  font-size: 30px;
-  color: #0f1f2f;
+margin-bottom: 25px;
+font-size: 30px;
+color: #0f1f2f;
 }
 
 .whySection p {
-  max-width: 750px;
-  margin: auto;
-  line-height: 1.9;
-  color: #555;
+max-width: 750px;
+margin: auto;
+line-height: 1.9;
+color: #555;
 }
 
 /* CTA */
 .ctaSection {
-  padding: 120px 10%;
-  background: linear-gradient(135deg, #1f6f8b, #2a9dbb);
-  text-align: center;
-  color: white;
+padding: 120px 10%;
+background: linear-gradient(135deg, #1f6f8b, #2a9dbb);
+text-align: center;
+color: white;
 }
 
 .ctaSection h2 {
-  margin-bottom: 30px;
-  font-size: 32px;
+margin-bottom: 30px;
+font-size: 32px;
 }
 
 .ctaSection button {
-  padding: 14px 34px;
-  background: white;
-  color: #0f1f2f;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+padding: 14px 34px;
+background: white;
+color: #0f1f2f;
+border: none;
+border-radius: 6px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.25s ease;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .ctaSection button:hover {
-  transform: translateY(-2px);
-  background: #f2f2f2;
+transform: translateY(-2px);
+background: #f2f2f2;
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
-  .header {
-    padding: 110px 6%;
-  }
-
-  .productSection,
-  .techSection,
-  .whySection,
-  .ctaSection {
-    padding: 70px 6%;
-  }
-
-  .ctaSection button {
-    width: 100%;
-  }
-}
-
+/* Tablet */
 @media (max-width: 992px) {
-  .productItem {
-    flex-basis: calc((100% - 24px) / 2);
-  }
+.productGrid {
+grid-template-columns: repeat(2, 1fr); /* 2 images */
+}
 }
 
+/* Mobile */
 @media (max-width: 768px) {
-  .productHeading {
-    font-size: 28px;
-  }
+.header {
+padding: 110px 6%;
+}
 
-  .productItem {
-    flex-basis: 100%;
-    min-width: 100%;
-  }
+.productSection,
+.techSection,
+.whySection,
+.ctaSection {
+padding: 70px 6%;
+}
 
-  .scrollHint {
-    margin-bottom: 20px;
-  }
+.productGrid {
+grid-template-columns: repeat(2, 1fr); /* 2 images on mobile */
+gap: 16px;
+}
+
+.productHeading {
+font-size: 28px;
+}
+
+.scrollHint {
+margin-bottom: 20px;
+}
+
+.ctaSection button {
+width: 100%;
+}
 }

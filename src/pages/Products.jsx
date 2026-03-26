@@ -1,8 +1,7 @@
-import React from "react";
-import styles from "./Products.module.css";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
-import { useSelector } from "react-redux";
+import styles from "./Products.module.css";
 const Products = () => {
   const images = useSelector((state) => state.images.images);
   const navigate = useNavigate();
